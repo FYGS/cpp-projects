@@ -196,8 +196,7 @@ void Bibliotheque::stocker(Oeuvre const& oeuvre, unsigned int nombre)
 {
 	for (size_t i = 0; i < nombre; i++)
 	{
-		auto exempl = new Exemplaire(oeuvre);
-		exemplaires.push_back(exempl);
+		exemplaires.push_back(new Exemplaire(oeuvre));
 	}
 }
 
